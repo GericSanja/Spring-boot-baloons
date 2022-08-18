@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background: beige;">
+<div style="border: 5px solid black; margin: 25% 15%;padding: 20px;background: teal;border-radius: 10px;" class="form-holder">
+    <h3 style="text-align: center; color: #fff;" >Enter string to see how much balloons we can find</h3>
+    <form style="text-align: center;" action="strings" method="post">
+        <label style="color: #fff;font-size: 17px;" for="string">Enter string here: </label>
+        <input type="text" name="string">
+        <button type="submit">Submit</button>
+    </form>
+    <h3 style="text-align: center;color: #fff;" th:text="${strings}"></h3>
+</div>
+
+</body>
+</html>
